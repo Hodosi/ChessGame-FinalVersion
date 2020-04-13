@@ -1,0 +1,1 @@
+D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\ChessCrush.csproj;x86

@@ -45,7 +45,7 @@ namespace ChessCrush
         bool CanMoveWhitePice = true;
         bool isPawnMove = false, isKingMove = false;
         int whitePiecesOrientation, blackPiecesOrienation;
-        int childIndex;
+        int childIndex=0;
         int enPassantRow = 0, enPassantColumn = 0;
         int movingPieceIndex = 0, moveingRowIndex = 0, moveingColumnIndex = 0;
         int WhiteKingRow, WhiteKingColumn, BlackKingRow, BlackKingColumn;
@@ -61,7 +61,6 @@ namespace ChessCrush
         int[,] validcheckFiled = new int[10, 10];
         public void initChessBoard()
         {
-            childIndex = 0;
             for (int i = 1; i <= 8; i++)
             {
                 for (int j = 1; j <= 8; j++)
@@ -379,6 +378,7 @@ namespace ChessCrush
 
         public void dropPiece(int rowIndex, int columnIndex, bool isWhite)
         {
+            isCheck = false;
             Grid.SetRow((FrameworkElement)GridBoard.Children.ElementAt(movingPieceIndex), rowIndex);
             Grid.SetColumn((FrameworkElement)GridBoard.Children.ElementAt(movingPieceIndex), columnIndex);
             fileds[rowIndex, columnIndex] = fileds[moveingRowIndex, moveingColumnIndex];
@@ -405,9 +405,10 @@ namespace ChessCrush
 
             if (isWhite)
             {
-                if(CheckCheck(BlackKingRow, BlackKingColumn, isWhite)>0)
+                if (CheckCheck(BlackKingRow, BlackKingColumn, isWhite) > 0)
                 {
                     var dialog = new MessageDialog("Check");
+                    isCheck = true;
                     dialog.ShowAsync();
                     if (CheckCheckMate(BlackKingRow, BlackKingColumn, isWhite))
                     {
@@ -423,10 +424,11 @@ namespace ChessCrush
             }
             else
             {
-                if(CheckCheck(WhiteKingRow, WhiteKingColumn, isWhite) > 0)
+                if (CheckCheck(WhiteKingRow, WhiteKingColumn, isWhite) > 0)
                 {
                     //isCheck = true;
                     var dialog = new MessageDialog("Check");
+                    isCheck = true;
                     dialog.ShowAsync();
                     if (CheckCheckMate(WhiteKingRow, WhiteKingColumn, isWhite))
                     {
@@ -564,12 +566,17 @@ namespace ChessCrush
             return true;
         }
 
-        bool simulateMove(int rowForm,int colFrom, int rowTo, int colTo, bool isWhite,bool isKK=false)
+        bool simulateMove(int rowForm, int colFrom, int rowTo, int colTo, bool isWhite, bool isKK = false,bool isEnPass=false)
         {
+            var filedEnPass = fileds[enPassantRow, enPassantColumn];
             var filed = fileds[rowForm, colFrom];
             var filedTo = fileds[rowTo, colTo];
             fileds[rowTo, colTo] = filed;
             resetFieldProperties(rowForm, colFrom);
+            if (isEnPass)
+            {
+                resetFieldProperties(enPassantRow, enPassantColumn);
+            }
             if (isKK)
             {
                 if (CheckCheck(rowTo, colTo, !isWhite) == 0)
@@ -586,6 +593,7 @@ namespace ChessCrush
                 {
                     fileds[rowForm, colFrom] = filed;
                     fileds[rowTo, colTo] = filedTo;
+                    fileds[enPassantRow, enPassantColumn] = filedEnPass;
                     //resetFieldProperties(rowTo, colTo);
                     return true;
                 }
@@ -596,12 +604,14 @@ namespace ChessCrush
                 {
                     fileds[rowForm, colFrom] = filed;
                     fileds[rowTo, colTo] = filedTo;
+                    fileds[enPassantRow, enPassantColumn] = filedEnPass;
                     //resetFieldProperties(rowTo, colTo);
                     return true;
                 }
             }
             fileds[rowForm, colFrom] = filed;
             fileds[rowTo, colTo] = filedTo;
+            fileds[enPassantRow, enPassantColumn] = filedEnPass;
             //resetFieldProperties(rowTo, colTo);
             return false;
         }
@@ -615,10 +625,10 @@ namespace ChessCrush
                     validFiled[i, j] = 0;
                 }
             }
-           // if (!canMove(row, col, isWhite))
-           // {
-           //     return;
-           // }
+            // if (!canMove(row, col, isWhite))
+            // {
+            //     return;
+            // }
             isPawnMove = false;
             isKingMove = false;
             string pieceName = fileds[row, col].codNamePiece;
@@ -648,7 +658,7 @@ namespace ChessCrush
                     break;
             }
         }
-        public bool pawnMove(int row, int col, bool isWhite, bool VerifyCheck = false,bool VerifyCheckMate=false)
+        public bool pawnMove(int row, int col, bool isWhite, bool VerifyCheck = false, bool VerifyCheckMate = false)
         {
             int orintent;
             int valColOp;
@@ -669,7 +679,7 @@ namespace ChessCrush
                 {
                     if (VerifyCheckMate == false)
                     {
-                        if (simulateMove(row, col, row+1*orintent, col, isWhite) == true)
+                        if (simulateMove(row, col, row + 1 * orintent, col, isWhite) == true)
                         {
                             validFiled[row + 1 * orintent, col] = 1;
                             GridBoard.Children.ElementAt(indexBorder[row + 1 * orintent, col]).Visibility = Visibility.Visible;
@@ -687,7 +697,7 @@ namespace ChessCrush
                     {
                         if (VerifyCheckMate == false)
                         {
-                            if (simulateMove(row, col, row+2*orintent, col, isWhite) == true)
+                            if (simulateMove(row, col, row + 2 * orintent, col, isWhite) == true)
                             {
                                 validFiled[row + 2 * orintent, col] = 1;
                                 GridBoard.Children.ElementAt(indexBorder[row + 2 * orintent, col]).Visibility = Visibility.Visible;
@@ -711,15 +721,15 @@ namespace ChessCrush
                     //verify capture
                     if (col + j <= 8 && col + j >= 1 && fileds[row + 1 * orintent, col + j].valueColorPiece == valColOp)
                     {
-                        if (VerifyCheck == false && VerifyCheckMate==false)
+                        if (VerifyCheck == false && VerifyCheckMate == false)
                         {
-                            if (simulateMove(row, col, row+1*orintent, col + j, isWhite) == true)
+                            if (simulateMove(row, col, row + 1 * orintent, col + j, isWhite) == true)
                             {
                                 validFiled[row + 1 * orintent, col + j] = 1;
                                 GridBoard.Children.ElementAt(indexBorder[row + 1 * orintent, col + j]).Visibility = Visibility.Visible;
                             }
                         }
-                        else if(VerifyCheck == true)
+                        else if (VerifyCheck == true)
                         {
                             if (fileds[row + 1 * orintent, col + j].codNamePiece == "")
                             {
@@ -738,9 +748,9 @@ namespace ChessCrush
                     //verify enPassant
                     if (col + j <= 8 && col + j >= 1 && row == enPassantRow && (col + j) == enPassantColumn)
                     {
-                        if (VerifyCheck == false && VerifyCheckMate==false)
+                        if (VerifyCheck == false && VerifyCheckMate == false)
                         {
-                            if (simulateMove(row, col, row+1*orintent, col + j, isWhite) == true)
+                            if (simulateMove(row, col, row + 1 * orintent, col + j, isWhite,false,true) == true)
                             {
                                 validFiled[row + 1 * orintent, col + j] = 1;
                                 GridBoard.Children.ElementAt(indexBorder[row + 1 * orintent, col + j]).Visibility = Visibility.Visible;
@@ -748,7 +758,7 @@ namespace ChessCrush
                         }
                         if (VerifyCheckMate == true)
                         {
-                            if (simulateMove(row, col, row + 1 * orintent,col + j, isWhite) == true)
+                            if (simulateMove(row, col, row + 1 * orintent, col + j, isWhite, false, true) == true)
                             {
                                 return true;
                             }
@@ -798,14 +808,14 @@ namespace ChessCrush
                         {
                             if (VerifyCheckMate == true)
                             {
-                                if (simulateMove(row, col, i, j, isWhite,true) == true)
+                                if (simulateMove(row, col, i, j, isWhite, true) == true)
                                 {
                                     return true;
                                 }
                             }
                             else
                             {
-                                if (simulateMove(row, col,i,j, isWhite, true) == true)
+                                if (simulateMove(row, col, i, j, isWhite, true) == true)
                                 {
                                     validFiled[i, j] = 1;
                                     GridBoard.Children.ElementAt(indexBorder[i, j]).Visibility = Visibility.Visible;
@@ -823,19 +833,23 @@ namespace ChessCrush
                             }
                             else
                             {
-                                if (simulateMove(row, col,i,j,isWhite, true) == true)
+                                if (simulateMove(row, col, i, j, isWhite, true) == true)
                                 {
                                     validFiled[row, col] = 0;
                                     GridBoard.Children.ElementAt(indexBorder[row, col]).Visibility = Visibility.Collapsed;
                                 }
                             }
                         }
-                        if (checkNr == 1 && VerifyCheckMate==false)
+                        if (checkNr == 1 && VerifyCheckMate == false)
                         {
                             kingMove(i, j, isWhite, 2);
                         }
                     }
                 }
+            }
+            if (isCheck)
+            {
+                return false;
             }
             //verify castling 
             if ((col == 5 || col == 4) && (row == 8 || row == 1))
@@ -848,31 +862,32 @@ namespace ChessCrush
                         {
                             if (VerifyCheckMate == true)
                             {
-                                if (simulateMove(row, col, row, col+2, isWhite, true) == true)
+                                if (simulateMove(row, col, row, col + 2, isWhite, true) == true)
                                 {
                                     return true;
                                 }
                             }
                             else
                             {
-                                if (simulateMove(row, col, row, col + 2, isWhite, true) == true)
+                                if (simulateMove(row, col, row, col + 2, isWhite, true) == true && simulateMove(row, col, row, col + 1, isWhite, true) == true)
                                 {
                                     validFiled[row, col + 2] = 1;
                                     GridBoard.Children.ElementAt(indexBorder[row, col + 2]).Visibility = Visibility.Visible;
                                 }
-                            }                        }
+                            }
+                        }
                         if (castlingWhite2 && fileds[row, col - 1].valueColorPiece == 0 && fileds[row, col - 2].valueColorPiece == 0 && fileds[row, col - 3].valueColorPiece == 0)
                         {
                             if (VerifyCheckMate == true)
                             {
-                                if (simulateMove(row, col, row, col-2, isWhite, true) == true)
+                                if (simulateMove(row, col, row, col - 2, isWhite, true) == true)
                                 {
                                     return true;
                                 }
                             }
                             else
                             {
-                                if (simulateMove(row, col, row, col - 2, isWhite, true) == true)
+                                if (simulateMove(row, col, row, col - 2, isWhite, true) == true && simulateMove(row, col, row, col - 1, isWhite, true) == true)
                                 {
                                     validFiled[row, col - 2] = 1;
                                     GridBoard.Children.ElementAt(indexBorder[row, col - 2]).Visibility = Visibility.Visible;
@@ -886,14 +901,14 @@ namespace ChessCrush
                         {
                             if (VerifyCheckMate == true)
                             {
-                                if (simulateMove(row, col, row, col+2, isWhite, true) == true)
+                                if (simulateMove(row, col, row, col + 2, isWhite, true) == true)
                                 {
                                     return true;
                                 }
                             }
                             else
                             {
-                                if (simulateMove(row, col, row, col+2, isWhite,true) == true)
+                                if (simulateMove(row, col, row, col + 2, isWhite, true) == true && simulateMove(row, col, row, col + 1, isWhite, true) == true)
                                 {
                                     validFiled[row, col + 2] = 1;
                                     GridBoard.Children.ElementAt(indexBorder[row, col + 2]).Visibility = Visibility.Visible;
@@ -904,14 +919,14 @@ namespace ChessCrush
                         {
                             if (VerifyCheckMate == true)
                             {
-                                if (simulateMove(row, col, row, col-2, isWhite, true) == true)
+                                if (simulateMove(row, col, row, col - 2, isWhite, true) == true)
                                 {
                                     return true;
                                 }
                             }
                             else
                             {
-                                if (simulateMove(row, col, row, col-2, isWhite,true) == true)
+                                if (simulateMove(row, col, row, col - 2, isWhite, true) == true && simulateMove(row, col, row, col - 1, isWhite, true) == true)
                                 {
                                     validFiled[row, col - 2] = 1;
                                     GridBoard.Children.ElementAt(indexBorder[row, col - 2]).Visibility = Visibility.Visible;
@@ -935,7 +950,7 @@ namespace ChessCrush
                             }
                             else
                             {
-                                if (simulateMove(row, col, row, col-2, isWhite,true) == true)
+                                if (simulateMove(row, col, row, col - 2, isWhite, true) == true && simulateMove(row, col, row, col - 1, isWhite, true) == true)
                                 {
                                     validFiled[row, col - 2] = 1;
                                     GridBoard.Children.ElementAt(indexBorder[row, col - 2]).Visibility = Visibility.Visible;
@@ -953,7 +968,7 @@ namespace ChessCrush
                             }
                             else
                             {
-                                if (simulateMove(row, col, row, col+2, isWhite,true) == true)
+                                if (simulateMove(row, col, row, col + 2, isWhite, true) == true && simulateMove(row, col, row, col + 1, isWhite, true) == true)
                                 {
                                     validFiled[row, col + 2] = 1;
                                     GridBoard.Children.ElementAt(indexBorder[row, col + 2]).Visibility = Visibility.Visible;
@@ -974,7 +989,7 @@ namespace ChessCrush
                             }
                             else
                             {
-                                if (simulateMove(row, col, row, col-2, isWhite,true) == true)
+                                if (simulateMove(row, col, row, col - 2, isWhite, true) == true && simulateMove(row, col, row, col - 1, isWhite, true) == true)
                                 {
                                     validFiled[row, col - 2] = 1;
                                     GridBoard.Children.ElementAt(indexBorder[row, col - 2]).Visibility = Visibility.Visible;
@@ -992,7 +1007,7 @@ namespace ChessCrush
                             }
                             else
                             {
-                                if (simulateMove(row, col, row, col+2, isWhite,true) == true)
+                                if (simulateMove(row, col, row, col + 2, isWhite, true) == true && simulateMove(row, col, row, col + 1, isWhite, true) == true)
                                 {
                                     validFiled[row, col + 2] = 1;
                                     GridBoard.Children.ElementAt(indexBorder[row, col + 2]).Visibility = Visibility.Visible;
@@ -1119,7 +1134,7 @@ namespace ChessCrush
                         }
                         if (VerifyCheckMate == true)
                         {
-                            if (simulateMove(row,col,i,j,isWhite) == true)
+                            if (simulateMove(row, col, i, j, isWhite) == true)
                             {
                                 return true;
                             }
@@ -1131,13 +1146,13 @@ namespace ChessCrush
                         j += kj;
                         if (VerifyCheck == false && VerifyCheckMate == false)
                         {
-                             if (simulateMove(row, col, i, j, isWhite) == true)
-                             {
+                            if (simulateMove(row, col, i, j, isWhite) == true)
+                            {
                                 validFiled[i, j] = 1;
                                 GridBoard.Children.ElementAt(indexBorder[i, j]).Visibility = Visibility.Visible;
-                             }
+                            }
                         }
-                        else if(VerifyCheck==true)
+                        else if (VerifyCheck == true)
                         {
                             if (fileds[i, j].codNamePiece == "Q" || fileds[i, j].codNamePiece == "B")
                             {
@@ -1243,7 +1258,7 @@ namespace ChessCrush
             return 0;
         }
 
-        bool CheckCheckMate(int kingRoW,int kingColumn,bool isWhite)
+        bool CheckCheckMate(int kingRoW, int kingColumn, bool isWhite)
         {
             int valOP;
             if (isWhite)
@@ -1257,21 +1272,22 @@ namespace ChessCrush
             isWhite = !isWhite;
             for (int i = 1; i <= 8; i++)
             {
-                for(int j = 1; j <= 8; j++)
+                for (int j = 1; j <= 8; j++)
                 {
                     if (fileds[i, j].valueColorPiece == valOP)
                     {
-                        string pieceName = fileds[i,j].codNamePiece;
+                        string pieceName = fileds[i, j].codNamePiece;
                         switch (pieceName)
                         {
                             case "":
-                                if(pawnMove(i, j, isWhite, false, true))
+                                if (pawnMove(i, j, isWhite, false, true))
                                 {
                                     return false;
                                 }
                                 break;
                             case "K":
-                                if(kingMove(i, j, isWhite, 1, true)){
+                                if (kingMove(i, j, isWhite, 1, true))
+                                {
                                     return false;
                                 }
                                 break;
@@ -1288,17 +1304,17 @@ namespace ChessCrush
                                 }
                                 break;
                             case "R":
-                                if(rookMove(i, j, isWhite,false,true) == true)
+                                if (rookMove(i, j, isWhite, false, true) == true)
                                 {
                                     return false;
                                 }
                                 break;
                             case "Q":
-                                if(bishopMove(i, j, isWhite,false,true) == true)
+                                if (bishopMove(i, j, isWhite, false, true) == true)
                                 {
                                     return false;
                                 }
-                                if(rookMove(i, j, isWhite, false, true) == true)
+                                if (rookMove(i, j, isWhite, false, true) == true)
                                 {
                                     return false;
                                 }

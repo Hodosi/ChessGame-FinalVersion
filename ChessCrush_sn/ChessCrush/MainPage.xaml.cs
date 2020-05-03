@@ -38,7 +38,8 @@ namespace ChessCrush
         {
             initChessBoard();
         }
-        bool isCheck = false, isDoubleCheck = false, isCheckMate = false;
+
+        bool isCheck = false;
         bool castlingBlack1 = true, castlingBlack2 = true;
         bool castlingWhite1 = true, castlingWhite2 = true;
         bool PieceInMoveing = false;
@@ -58,9 +59,23 @@ namespace ChessCrush
         Filed[,] fileds = new Filed[10, 10];
         int[,] indexBorder = new int[10, 10];
         int[,] validFiled = new int[10, 10];
-        int[,] validcheckFiled = new int[10, 10];
+
         public void initChessBoard()
         {
+            //init variabels
+            isCheck = false;
+            castlingBlack1 = true;  castlingBlack2 = true;
+            castlingWhite1 = true; castlingWhite2 = true;
+            PieceInMoveing = false;
+            CanMoveWhitePice = true;
+            isPawnMove = false; isKingMove = false;
+            childIndex = 0;
+            enPassantRow = 0; enPassantColumn = 0;
+            movingPieceIndex = 0; moveingRowIndex = 0; moveingColumnIndex = 0;
+            fileds = new Filed[10, 10];
+            indexBorder = new int[10, 10];
+            validFiled = new int[10, 10];
+            //--------------------------------------------
             for (int i = 1; i <= 8; i++)
             {
                 for (int j = 1; j <= 8; j++)
@@ -72,6 +87,7 @@ namespace ChessCrush
                     GridBoard.Children.ElementAt(indexBorder[i, j]).Visibility = Visibility.Collapsed;
                 }
             }
+
             for (int i = 1; i <= 8; i++)
             {
                 for (int j = 1; j <= 8; j++)
@@ -79,9 +95,6 @@ namespace ChessCrush
                     fileds[i, j].valueColorPiece = 0;
                 }
             }
-
-            //set the bordervisibility to false
-            //GridBoard.Children.ElementAt(9).Visibility = Visibility.Collapsed;
 
             bool piecewiew = true;
             if (piecewiew)
@@ -135,6 +148,8 @@ namespace ChessCrush
                 }
 
                 addPiece("BlackKing", "K", 2, 10, 8, 4);
+                BlackKingRow = 8;
+                BlackKingColumn = 4;
                 addPiece("BlackQueen", "Q", 2, 9, 8, 5);
                 addPiece("BlackRook", "R", 2, 5, 8, 1);
                 addPiece("BlackRook", "R", 2, 5, 8, 8);
@@ -148,6 +163,8 @@ namespace ChessCrush
                 }
 
                 addPiece("WhiteKing", "K", 1, 10, 1, 4);
+                WhiteKingRow = 1;
+                WhiteKingColumn = 4;
                 addPiece("WhiteQueen", "Q", 1, 9, 1, 5);
                 addPiece("WhiteRook", "R", 1, 5, 1, 1);
                 addPiece("WhiteRook", "R", 1, 5, 1, 8);
@@ -169,9 +186,6 @@ namespace ChessCrush
             //GridBoard.Children.RemoveAt(childIndex - 1);
             //childIndex--;
             //GridBoard.Children.RemoveAt(childIndex - 1);
-
-            //-----------------------------------------
-
         }
 
         public void addPiece(string nm, string cnm, int valcol, int valpiece, int i, int j)
@@ -186,6 +200,7 @@ namespace ChessCrush
             Uri uri = new Uri(img.BaseUri, "Resource/Pieces/" + nm + ".png");
             bitmapImage.UriSource = uri;
             img.Source = bitmapImage;
+
             //set data
             fileds[i, j].indexPiece = childIndex - 1;
             fileds[i, j].valueColorPiece = valcol;
@@ -273,7 +288,6 @@ namespace ChessCrush
                 Windows.UI.Input.PointerPoint point = e.GetCurrentPoint(GridBoard);
                 if (point.Properties.IsLeftButtonPressed)
                 {
-
                     //get row and column index
                     double mouseX = double.Parse(point.Position.X.ToString());
                     double mouseY = double.Parse(point.Position.Y.ToString());
@@ -300,13 +314,15 @@ namespace ChessCrush
                     //drop white piece
                     else if (CanMoveWhitePice && PieceInMoveing && validFiled[rowIndex, columnIndex] == 1)
                     {
+                        //castling drop
                         if (isKingMove && Math.Abs(moveingColumnIndex - columnIndex) == 2)
                         {
                             verifyEnPassant(rowIndex, columnIndex);
                             dropCastling(rowIndex, columnIndex, true);
                             CanMoveWhitePice = false;
                         }
-                        else if (fileds[rowIndex, columnIndex].valueColorPiece == 0 && isPawnMove && Math.Abs(enPassantRow - rowIndex) == 1 && (moveingRowIndex == 4 || moveingRowIndex == 5) && enPassantColumn == columnIndex)
+                        //en passant drop
+                        else if (isPawnMove && fileds[rowIndex, columnIndex].valueColorPiece == 0 && Math.Abs(enPassantRow - rowIndex) == 1 && (moveingRowIndex == 4 || moveingRowIndex == 5) && enPassantColumn == columnIndex)
                         {
                             GridBoard.Children.ElementAt(fileds[enPassantRow, enPassantColumn].indexPiece).Visibility = Visibility.Collapsed;
                             resetFieldProperties(enPassantRow, enPassantColumn);
@@ -314,12 +330,14 @@ namespace ChessCrush
                             dropPiece(rowIndex, columnIndex, true);
                             CanMoveWhitePice = false;
                         }
+                        //normal drop
                         else if (fileds[rowIndex, columnIndex].valueColorPiece == 0)
                         {
                             verifyEnPassant(rowIndex, columnIndex);
                             dropPiece(rowIndex, columnIndex, true);
                             CanMoveWhitePice = false;
                         }
+                        //capture move
                         else if (fileds[rowIndex, columnIndex].valueColorPiece == 2)
                         {
                             GridBoard.Children.ElementAt(fileds[rowIndex, columnIndex].indexPiece).Visibility = Visibility.Collapsed;
@@ -343,13 +361,15 @@ namespace ChessCrush
                     //drop black piece
                     else if (!CanMoveWhitePice && PieceInMoveing && validFiled[rowIndex, columnIndex] == 1)
                     {
+                        //castling drop
                         if (isKingMove && Math.Abs(moveingColumnIndex - columnIndex) == 2)
                         {
                             verifyEnPassant(rowIndex, columnIndex);
                             dropCastling(rowIndex, columnIndex, false);
                             CanMoveWhitePice = true;
                         }
-                        else if (fileds[rowIndex, columnIndex].valueColorPiece == 0 && isPawnMove && Math.Abs(enPassantRow - rowIndex) == 1 && (moveingRowIndex == 4 || moveingRowIndex == 5) && enPassantColumn == columnIndex)
+                        //en passant drop
+                        else if (isPawnMove && fileds[rowIndex, columnIndex].valueColorPiece == 0 && Math.Abs(enPassantRow - rowIndex) == 1 && (moveingRowIndex == 4 || moveingRowIndex == 5) && enPassantColumn == columnIndex)
                         {
                             GridBoard.Children.ElementAt(fileds[enPassantRow, enPassantColumn].indexPiece).Visibility = Visibility.Collapsed;
                             resetFieldProperties(enPassantRow, enPassantColumn);
@@ -357,12 +377,14 @@ namespace ChessCrush
                             dropPiece(rowIndex, columnIndex, false);
                             CanMoveWhitePice = true;
                         }
+                        //normal drop
                         else if (fileds[rowIndex, columnIndex].valueColorPiece == 0)
                         {
                             verifyEnPassant(rowIndex, columnIndex);
                             dropPiece(rowIndex, columnIndex, false);
                             CanMoveWhitePice = true;
                         }
+                        //capture drop
                         else if (fileds[rowIndex, columnIndex].valueColorPiece == 1)
                         {
                             GridBoard.Children.ElementAt(fileds[rowIndex, columnIndex].indexPiece).Visibility = Visibility.Collapsed;
@@ -378,6 +400,7 @@ namespace ChessCrush
 
         public void dropPiece(int rowIndex, int columnIndex, bool isWhite)
         {
+            var dialog=new MessageDialog("");
             isCheck = false;
             Grid.SetRow((FrameworkElement)GridBoard.Children.ElementAt(movingPieceIndex), rowIndex);
             Grid.SetColumn((FrameworkElement)GridBoard.Children.ElementAt(movingPieceIndex), columnIndex);
@@ -389,9 +412,38 @@ namespace ChessCrush
                 for (int j = 1; j <= 8; j++)
                 {
                     GridBoard.Children.ElementAt(indexBorder[i, j]).Visibility = Visibility.Collapsed;
-                    //validFiled[i, j] = 0;
                 }
             }
+            //-------------
+            if (isPawnMove)
+            {
+                if (rowIndex == 1 && whitePiecesOrientation == -1)
+                {
+                    GridBoard.Children.ElementAt(fileds[rowIndex, columnIndex].indexPiece).Visibility = Visibility.Collapsed;
+                    resetFieldProperties(rowIndex, columnIndex);
+                    addPiece("WhiteQueen", "Q", 1, 9, rowIndex, columnIndex);
+                }
+                else if (rowIndex == 8 && whitePiecesOrientation == 1)
+                {
+                    GridBoard.Children.ElementAt(fileds[rowIndex, columnIndex].indexPiece).Visibility = Visibility.Collapsed;
+                    resetFieldProperties(rowIndex, columnIndex);
+                    addPiece("WhiteQueen", "Q", 1, 9, rowIndex, columnIndex);
+                }
+                else if (rowIndex == 1 && whitePiecesOrientation == 1)
+                {
+                    GridBoard.Children.ElementAt(fileds[rowIndex, columnIndex].indexPiece).Visibility = Visibility.Collapsed;
+                    resetFieldProperties(rowIndex, columnIndex);
+                    addPiece("BlackQueen", "Q", 2, 9, rowIndex, columnIndex);
+                }
+                else if (rowIndex == 8 && whitePiecesOrientation == -1)
+                {
+                    GridBoard.Children.ElementAt(fileds[rowIndex, columnIndex].indexPiece).Visibility = Visibility.Collapsed;
+                    resetFieldProperties(rowIndex, columnIndex);
+                    addPiece("BlackQueen", "Q", 2, 9, rowIndex, columnIndex);
+                }
+            }
+            //-----------
+
             if (isKingMove && isWhite)
             {
                 WhiteKingRow = rowIndex;
@@ -402,12 +454,11 @@ namespace ChessCrush
                 BlackKingRow = rowIndex;
                 BlackKingColumn = columnIndex;
             }
-
             if (isWhite)
             {
                 if (CheckCheck(BlackKingRow, BlackKingColumn, isWhite) > 0)
                 {
-                    var dialog = new MessageDialog("Check");
+                    dialog = new MessageDialog("Check");
                     isCheck = true;
                     dialog.ShowAsync();
                     if (CheckCheckMate(BlackKingRow, BlackKingColumn, isWhite))
@@ -426,8 +477,7 @@ namespace ChessCrush
             {
                 if (CheckCheck(WhiteKingRow, WhiteKingColumn, isWhite) > 0)
                 {
-                    //isCheck = true;
-                    var dialog = new MessageDialog("Check");
+                    dialog = new MessageDialog("Check");
                     isCheck = true;
                     dialog.ShowAsync();
                     if (CheckCheckMate(WhiteKingRow, WhiteKingColumn, isWhite))
@@ -442,6 +492,7 @@ namespace ChessCrush
                     }
                 }
             }
+
             //invalidate castling
             if (whitePiecesOrientation == -1)
             {
@@ -542,31 +593,7 @@ namespace ChessCrush
             GridBoard.Children.ElementAt(indexBorder[row, col]).Visibility = Visibility.Collapsed;
         }
 
-        bool canMove(int row, int col, bool isWhite)
-        {
-            var filed = fileds[row, col];
-            resetFieldProperties(row, col);
-            if (isWhite)
-            {
-                if (CheckCheck(WhiteKingRow, WhiteKingColumn, !isWhite) > 0)
-                {
-                    fileds[row, col] = filed;
-                    return false;
-                }
-            }
-            else
-            {
-                if (CheckCheck(BlackKingRow, BlackKingColumn, !isWhite) > 0)
-                {
-                    fileds[row, col] = filed;
-                    return false;
-                }
-            }
-            fileds[row, col] = filed;
-            return true;
-        }
-
-        bool simulateMove(int rowForm, int colFrom, int rowTo, int colTo, bool isWhite, bool isKK = false,bool isEnPass=false)
+        bool simulateMove(int rowForm, int colFrom, int rowTo, int colTo, bool isWhite, bool isKK = false, bool isEnPass = false)
         {
             var filedEnPass = fileds[enPassantRow, enPassantColumn];
             var filed = fileds[rowForm, colFrom];
@@ -583,7 +610,6 @@ namespace ChessCrush
                 {
                     fileds[rowForm, colFrom] = filed;
                     fileds[rowTo, colTo] = filedTo;
-                    //resetFieldProperties(rowTo, colTo);
                     return true;
                 }
             }
@@ -594,7 +620,6 @@ namespace ChessCrush
                     fileds[rowForm, colFrom] = filed;
                     fileds[rowTo, colTo] = filedTo;
                     fileds[enPassantRow, enPassantColumn] = filedEnPass;
-                    //resetFieldProperties(rowTo, colTo);
                     return true;
                 }
             }
@@ -605,16 +630,15 @@ namespace ChessCrush
                     fileds[rowForm, colFrom] = filed;
                     fileds[rowTo, colTo] = filedTo;
                     fileds[enPassantRow, enPassantColumn] = filedEnPass;
-                    //resetFieldProperties(rowTo, colTo);
                     return true;
                 }
             }
             fileds[rowForm, colFrom] = filed;
             fileds[rowTo, colTo] = filedTo;
             fileds[enPassantRow, enPassantColumn] = filedEnPass;
-            //resetFieldProperties(rowTo, colTo);
             return false;
         }
+
         public void initValidFields(int row, int col, bool isWhite)
         {
             for (int i = 1; i <= 8; i++)
@@ -625,10 +649,7 @@ namespace ChessCrush
                     validFiled[i, j] = 0;
                 }
             }
-            // if (!canMove(row, col, isWhite))
-            // {
-            //     return;
-            // }
+
             isPawnMove = false;
             isKingMove = false;
             string pieceName = fileds[row, col].codNamePiece;
@@ -1254,7 +1275,6 @@ namespace ChessCrush
             {
                 return 1;
             }
-
             return 0;
         }
 

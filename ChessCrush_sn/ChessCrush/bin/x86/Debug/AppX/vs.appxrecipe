@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-20T15:22:55.323</Modified>
+      <Modified>2020-05-03T08:45:41.628</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.exe">
       <PackagePath>entrypoint\ChessCrush.exe</PackagePath>
-      <Modified>2020-04-20T15:22:54.711</Modified>
+      <Modified>2020-05-03T08:45:41.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -134,15 +134,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.xr.xml">
       <PackagePath>ChessCrush.xr.xml</PackagePath>
-      <Modified>2020-04-10T10:02:25.898</Modified>
+      <Modified>2020-05-03T08:43:15.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-04-12T12:14:20.603</Modified>
+      <Modified>2020-05-03T08:45:40.942</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-04-12T12:14:20.604</Modified>
+      <Modified>2020-05-03T08:45:40.942</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -154,7 +154,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\bin\x86\Debug\Core\ChessCrush.exe">
       <PackagePath>ChessCrush.exe</PackagePath>
-      <Modified>2020-04-20T15:22:55.319</Modified>
+      <Modified>2020-05-03T08:45:41.628</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

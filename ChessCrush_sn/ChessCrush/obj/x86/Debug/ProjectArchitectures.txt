@@ -1,1 +1,1 @@
-D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\ChessCrush.csproj;x86
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\ChessCrush.csproj;x86

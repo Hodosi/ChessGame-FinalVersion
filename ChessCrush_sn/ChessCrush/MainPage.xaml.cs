@@ -46,7 +46,7 @@ namespace ChessCrush
         bool CanMoveWhitePice = true;
         bool isPawnMove = false, isKingMove = false;
         int whitePiecesOrientation, blackPiecesOrienation;
-        int childIndex=0;
+        int childIndex = 0;
         int enPassantRow = 0, enPassantColumn = 0;
         int movingPieceIndex = 0, moveingRowIndex = 0, moveingColumnIndex = 0;
         int WhiteKingRow, WhiteKingColumn, BlackKingRow, BlackKingColumn;
@@ -177,15 +177,6 @@ namespace ChessCrush
                     addPiece("WhitePawn", "", 1, 1, 2, i);
                 }
             }
-
-            //change piece position
-            //Grid.SetRow((FrameworkElement)GridBoard.Children.ElementAt(childIndex-1), 4);
-            //Grid.SetColumn((FrameworkElement)GridBoard.Children.ElementAt(childIndex-1), 4);
-
-            //// remove (childIndex - 1) for last child
-            //GridBoard.Children.RemoveAt(childIndex - 1);
-            //childIndex--;
-            //GridBoard.Children.RemoveAt(childIndex - 1);
         }
 
         public void addPiece(string nm, string cnm, int valcol, int valpiece, int i, int j)

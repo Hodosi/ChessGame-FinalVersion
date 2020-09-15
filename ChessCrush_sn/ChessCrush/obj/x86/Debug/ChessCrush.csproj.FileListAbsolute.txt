@@ -42,3 +42,179 @@ D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\obj\x86\Debug\qualifiers.txt.interm
 D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\obj\x86\Debug\ProjectArchitectures.txt
 D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\App.xbf
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\MainPage.xbf
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.xr.xml
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.exe
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.pdb
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\resources.pri
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\AppxManifest.xml
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\Core\AppxManifest.xml
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\Core\ChessCrush.exe
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.build.appxrecipe
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\System.Runtime.dll
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.csprojAssemblyReference.cache
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.g.i.cs
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.g.cs
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.g.i.cs
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.g.cs
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\XamlTypeInfo.g.cs
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.xaml
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.xaml
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.xbf
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.xbf
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\XamlSaveStateFile.xml
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.csproj.CopyComplete
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.exe
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.pdb
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ResourceHandlingTask.state
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\priconfig.xml
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\priconfig.xml.intermediate
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\unfiltered.layout.resfiles
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\filtered.layout.resfiles
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\filtered.layout.resfiles.intermediate
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\excluded.layout.resfiles
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\excluded.layout.resfiles.intermediate
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\resources.resfiles
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\resources.resfiles.intermediate
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\pri.resfiles
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\pri.resfiles.intermediate
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\qualifiers.txt
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\qualifiers.txt.intermediate
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ProjectArchitectures.txt
+D:\Desktop\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\App.xbf
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\MainPage.xbf
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.xr.xml
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.exe
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.pdb
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\resources.pri
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\AppxManifest.xml
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\Core\AppxManifest.xml
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\Core\ChessCrush.exe
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.build.appxrecipe
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\System.Runtime.dll
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.csprojAssemblyReference.cache
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.g.i.cs
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.g.cs
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.g.i.cs
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.g.cs
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\XamlTypeInfo.g.cs
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.xaml
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.xaml
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.xbf
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.xbf
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\XamlSaveStateFile.xml
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.csproj.CopyComplete
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.exe
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.pdb
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ResourceHandlingTask.state
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\priconfig.xml
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\priconfig.xml.intermediate
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\unfiltered.layout.resfiles
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\filtered.layout.resfiles
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\filtered.layout.resfiles.intermediate
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\excluded.layout.resfiles
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\excluded.layout.resfiles.intermediate
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\resources.resfiles
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\resources.resfiles.intermediate
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\pri.resfiles
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\pri.resfiles.intermediate
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\qualifiers.txt
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\qualifiers.txt.intermediate
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ProjectArchitectures.txt
+D:\Desktop\Curat\Info\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\App.xbf
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\MainPage.xbf
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.xr.xml
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.exe
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.pdb
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\resources.pri
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\AppxManifest.xml
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\Core\AppxManifest.xml
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\Core\ChessCrush.exe
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.build.appxrecipe
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\System.Runtime.dll
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.csprojAssemblyReference.cache
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.g.i.cs
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.g.cs
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.g.i.cs
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.g.cs
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\XamlTypeInfo.g.cs
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.xaml
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.xaml
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.xbf
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.xbf
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\XamlSaveStateFile.xml
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.csproj.CopyComplete
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.exe
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.pdb
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ResourceHandlingTask.state
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\priconfig.xml
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\priconfig.xml.intermediate
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\unfiltered.layout.resfiles
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\filtered.layout.resfiles
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\filtered.layout.resfiles.intermediate
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\excluded.layout.resfiles
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\excluded.layout.resfiles.intermediate
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\resources.resfiles
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\resources.resfiles.intermediate
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\pri.resfiles
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\pri.resfiles.intermediate
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\qualifiers.txt
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\qualifiers.txt.intermediate
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ProjectArchitectures.txt
+D:\Desktop\CV gOOg\chess\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\App.xbf
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\MainPage.xbf
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.xr.xml
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.exe
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.pdb
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\System.Runtime.dll
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.csprojAssemblyReference.cache
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.g.i.cs
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.g.cs
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.g.i.cs
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.g.cs
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\XamlTypeInfo.g.cs
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.xaml
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.xaml
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\App.xbf
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MainPage.xbf
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\XamlSaveStateFile.xml
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.csproj.CopyComplete
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.exe
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ChessCrush.pdb
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\resources.pri
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\AppxManifest.xml
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\Core\AppxManifest.xml
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\Core\ChessCrush.exe
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.build.appxrecipe
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ResourceHandlingTask.state
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\priconfig.xml
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\priconfig.xml.intermediate
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\unfiltered.layout.resfiles
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\filtered.layout.resfiles
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\filtered.layout.resfiles.intermediate
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\excluded.layout.resfiles
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\excluded.layout.resfiles.intermediate
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\resources.resfiles
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\resources.resfiles.intermediate
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\pri.resfiles
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\pri.resfiles.intermediate
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\qualifiers.txt
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\qualifiers.txt.intermediate
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\ProjectArchitectures.txt
+D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json

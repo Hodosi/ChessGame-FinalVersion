@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\ChessWar\\ChessCrush_sn\\ChessCrush\\ChessCrush.csproj": {}
+    "D:\\Desktop\\CV_gOOg\\ChessGame\\ChessCrush_sn\\ChessCrush\\ChessCrush.csproj": {}
   },
   "projects": {
-    "D:\\Desktop\\ChessWar\\ChessCrush_sn\\ChessCrush\\ChessCrush.csproj": {
+    "D:\\Desktop\\CV_gOOg\\ChessGame\\ChessCrush_sn\\ChessCrush\\ChessCrush.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\ChessWar\\ChessCrush_sn\\ChessCrush\\ChessCrush.csproj",
+        "projectUniqueName": "D:\\Desktop\\CV_gOOg\\ChessGame\\ChessCrush_sn\\ChessCrush\\ChessCrush.csproj",
         "projectName": "ChessCrush",
-        "projectPath": "D:\\Desktop\\ChessWar\\ChessCrush_sn\\ChessCrush\\ChessCrush.csproj",
+        "projectPath": "D:\\Desktop\\CV_gOOg\\ChessGame\\ChessCrush_sn\\ChessCrush\\ChessCrush.csproj",
         "packagesPath": "C:\\Users\\Hodosi\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\ChessWar\\ChessCrush_sn\\ChessCrush\\obj\\",
+        "outputPath": "D:\\Desktop\\CV_gOOg\\ChessGame\\ChessCrush_sn\\ChessCrush\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

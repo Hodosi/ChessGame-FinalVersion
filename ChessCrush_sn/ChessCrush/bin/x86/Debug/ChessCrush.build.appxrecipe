@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>a8528719-b4bb-4915-a906-8ba40a17c01c</PackageIdentityName>
     <PackageIdentityPublisher>CN=Hodosi</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.exe">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.exe">
       <PackagePath>entrypoint\ChessCrush.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
@@ -34,88 +34,88 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Resource\Pieces\BlackBishop.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Resource\Pieces\BlackBishop.png">
       <PackagePath>Resource\Pieces\BlackBishop.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Resource\Pieces\BlackKing.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Resource\Pieces\BlackKing.png">
       <PackagePath>Resource\Pieces\BlackKing.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Resource\Pieces\BlackKnight.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Resource\Pieces\BlackKnight.png">
       <PackagePath>Resource\Pieces\BlackKnight.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Resource\Pieces\BlackPawn.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Resource\Pieces\BlackPawn.png">
       <PackagePath>Resource\Pieces\BlackPawn.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Resource\Pieces\BlackQueen.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Resource\Pieces\BlackQueen.png">
       <PackagePath>Resource\Pieces\BlackQueen.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Resource\Pieces\BlackRook.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Resource\Pieces\BlackRook.png">
       <PackagePath>Resource\Pieces\BlackRook.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Resource\Pieces\WhiteBishop.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Resource\Pieces\WhiteBishop.png">
       <PackagePath>Resource\Pieces\WhiteBishop.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Resource\Pieces\WhiteKing.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Resource\Pieces\WhiteKing.png">
       <PackagePath>Resource\Pieces\WhiteKing.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Resource\Pieces\WhiteKnight.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Resource\Pieces\WhiteKnight.png">
       <PackagePath>Resource\Pieces\WhiteKnight.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Resource\Pieces\WhitePawn.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Resource\Pieces\WhitePawn.png">
       <PackagePath>Resource\Pieces\WhitePawn.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Resource\Pieces\WhiteQueen.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Resource\Pieces\WhiteQueen.png">
       <PackagePath>Resource\Pieces\WhiteQueen.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\Resource\Pieces\WhiteRook.png">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\Resource\Pieces\WhiteRook.png">
       <PackagePath>Resource\Pieces\WhiteRook.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.xr.xml">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\ChessCrush.xr.xml">
       <PackagePath>ChessCrush.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Desktop\ChessWar\ChessCrush_sn\ChessCrush\bin\x86\Debug\Core\ChessCrush.exe">
+    <AppxPackagedFile Include="D:\Desktop\CV_gOOg\ChessGame\ChessCrush_sn\ChessCrush\bin\x86\Debug\Core\ChessCrush.exe">
       <PackagePath>ChessCrush.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
